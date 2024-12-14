@@ -4,7 +4,7 @@ from pizza.models import PizzaModel
 
 
 class PizzaSerializer(serializers.Serializer):
-    Id = serializers.IntegerField(read_only=True)
+    id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=100)
     price = serializers.IntegerField()
     size = serializers.FloatField()
